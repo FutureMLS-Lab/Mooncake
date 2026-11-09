@@ -35,5 +35,7 @@ GB300 trays have no GPU peer-memory module, so the transfer engine must register
 - #4998 by 0z5a: page-align the DMA-BUF export size for whole allocations.
 - The pre-touch part of #4364 by cloudomate: skip pre-touch for DMA-BUF device memory.
 
-The Kimi-K3.1-Pro GB300 image installs this branch's build (transfer engine, store client and `mooncake_master`) in
-place of its base image's Mooncake.
+The Kimi-K3.1-Pro GB300 image, `ghcr.io/futuremls-lab/flashstates-gb300:kimi-k31-cu134-266e88c-fs88bad5a-mcf74d68c-gb300`
+(also tagged `v0.1.0-kimi-k31-gb300`; on Docker Hub `weili0234/flashstates:kimi-k31-cu134-266e88c-fs88bad5a-mcf74d68c-gb300`
+and `weili0234/flashstates-vllm:v0.1.0-kimi-k31-gb300`), installs this branch's build of commit f74d68c (transfer
+engine, store client and `mooncake_master`) in place of its base image's Mooncake.
